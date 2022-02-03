@@ -4,13 +4,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { VerticalLayoutComponent } from './layout/vertical-layout/vertical-layout.component';
+//layouts elements
+import { ModernLayoutComponent } from './layout/modern-layout/modern-layout.component';
+
+//components
+import { TestComponentComponent } from './test-component/test-component.component';
+import { SidebarComponent } from './navigation/sidebar/sidebar.component';
+import { TopbarComponent } from './navigation/topbar/topbar.component';
+import { LongTableComponent } from './long-table/long-table.component';
+
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
-    VerticalLayoutComponent
-  ],
+    ModernLayoutComponent,
+    TestComponentComponent,
+    SidebarComponent,
+    TopbarComponent,
+      LongTableComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule
