@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule } from '@angular/material/table';
+
 //layouts elements
 import { ModernLayoutComponent } from './layout/modern-layout/modern-layout.component';
 
@@ -14,18 +17,22 @@ import { TopbarComponent } from './navigation/topbar/topbar.component';
 import { LongTableComponent } from './long-table/long-table.component';
 
 
+
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     ModernLayoutComponent,
     TestComponentComponent,
     SidebarComponent,
     TopbarComponent,
-      LongTableComponent
-   ],
+    LongTableComponent,
+    
+  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

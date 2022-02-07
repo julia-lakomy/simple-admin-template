@@ -1,3 +1,96 @@
-<p>
-  long-table works!
-</p>
+<div class="example-container mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="position">
+      <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="weight">
+      <mat-header-cell *matHeaderCellDef> Weight </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.weight}} </mat-cell>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="symbol">
+      <mat-header-cell *matHeaderCellDef> Symbol </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.symbol}} </mat-cell>
+    </ng-container>
+
+    <!-- Element1 Column -->
+    <ng-container matColumnDef="element1">
+      <mat-header-cell *matHeaderCellDef> Element1 </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.element1}} </mat-cell>
+    </ng-container>
+
+    <!-- Element2 Column -->
+    <ng-container matColumnDef="element2">
+      <mat-header-cell *matHeaderCellDef> Element2 </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.element2}} </mat-cell>
+    </ng-container>
+
+    <!-- Element3 Column -->
+    <ng-container matColumnDef="element3">
+      <mat-header-cell *matHeaderCellDef> Element3 </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.element3}} </mat-cell>
+    </ng-container>
+
+
+    <!-- Element4 Column -->
+    <ng-container matColumnDef="element4">
+      <mat-header-cell *matHeaderCellDef> Element4 </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.element4}} </mat-cell>
+    </ng-container>
+
+    <!-- Element5 Column -->
+    <ng-container matColumnDef="element5">
+      <mat-header-cell *matHeaderCellDef> Element5 </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.element5}} </mat-cell>
+    </ng-container>
+
+    <!-- Element6 Column -->
+    <ng-container matColumnDef="element6">
+      <mat-header-cell *matHeaderCellDef> Element6 </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.element6}} </mat-cell>
+    </ng-container>
+
+    <!-- Element7 Column -->
+    <ng-container matColumnDef="element7">
+      <mat-header-cell *matHeaderCellDef> Element7 </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.element7}} </mat-cell>
+    </ng-container>
+
+    <!-- Element8 Column -->
+    <ng-container matColumnDef="element8">
+      <mat-header-cell *matHeaderCellDef> Element8 </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.element8}} </mat-cell>
+    </ng-container>
+
+    <!-- Element9 Column -->
+    <ng-container matColumnDef="element9">
+      <mat-header-cell *matHeaderCellDef> Element9 </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.element9}} </mat-cell>
+    </ng-container>
+
+    <!-- Element10 Column -->
+    <ng-container matColumnDef="element10">
+      <mat-header-cell *matHeaderCellDef> Element10 </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.element10}} </mat-cell>
+    </ng-container>
+
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>
