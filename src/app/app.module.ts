@@ -7,26 +7,29 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 
-//layouts elements
-import { ModernLayoutComponent } from './layout/modern-layout/modern-layout.component';
 
-//components
-import { TestComponentComponent } from './test-component/test-component.component';
-import { SidebarComponent } from './navigation/sidebar/sidebar.component';
-import { TopbarComponent } from './navigation/topbar/topbar.component';
-import { LongTableComponent } from './long-table/long-table.component';
+//CUSTOM COMPONENTS
+import { LongTableComponent } from './layout-test/components/long-table/long-table.component';
+import { LayoutComponent } from './layout-test/layout/layout.component';
+import { SidebarComponent } from './layout-test/components/navigation/sidebar/sidebar.component';
+import { TopbarComponent } from './layout-test/components/navigation/topbar/topbar.component';
+import { TestContentComponent } from './layout-test/components/test-content/test-content.component';
+import { LogoSidebarComponent } from './layout-test/components/navigation/logo-sidebar/logo-sidebar.component';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ModernLayoutComponent,
-    TestComponentComponent,
+
+    LongTableComponent,
+    LayoutComponent,
     SidebarComponent,
     TopbarComponent,
-    LongTableComponent,
-    
+    TestContentComponent,
+    LogoSidebarComponent
+
   ],
   imports: [
     BrowserModule,

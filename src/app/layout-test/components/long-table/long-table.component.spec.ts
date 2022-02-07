@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { ModernLayoutComponent } from './modern-layout.component';
+import { LongTableComponent } from './long-table.component';
 
-describe('ModernLayoutComponent', () => {
-  let component: ModernLayoutComponent;
-  let fixture: ComponentFixture<ModernLayoutComponent>;
+describe('LongTableComponent', () => {
+  let component: LongTableComponent;
+  let fixture: ComponentFixture<LongTableComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ModernLayoutComponent ]
+      declarations: [ LongTableComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ModernLayoutComponent);
+    fixture = TestBed.createComponent(LongTableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
